@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-//  
-// 
-// 
-// Create Date: 19.03.2026 11:03:07
-// Design Name: Juriel Pereira
-// Module Name: MIPS_pipeline
-// Project Name: MIPS Processor 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module MIPS_pipeline(
     input clk1,             //Two-phase clock
