@@ -117,24 +117,19 @@ halt instructions.
 
 ## Limitations
 
--   No forwarding logic implemented
 -   No explicit data hazard detection unit
 -   No stall mechanism
 -   No jump instruction
--   Memory and instruction share same array
 
 ------------------------------------------------------------------------
 
 ## Possible Improvements
 
--   Add data forwarding unit
 -   Add hazard detection and stall logic
 -   Implement jump instruction
 -   Add testbench with automated verification
 -   Convert to single-clock synchronous pipeline
 -   Implement cache support
-
-
 
 --------------
 
