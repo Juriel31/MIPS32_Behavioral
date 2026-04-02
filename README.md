@@ -137,6 +137,38 @@ halt instructions.
 
 --------------
 
+## Test Case 
+
+#### Steps:
+
+1. Initialize register R1 with 10.
+2. Initialize register R2 with 20.
+3. Initialize register R3 with 25.
+4. Add the three numbers and store the sum in R5.
+
+#### Instructions
+
+|   Assembly Instruction |	Machine Code                     |	Hexcode |
+|   -------------------- |  -------------------------------- |  ------- |
+|ADDI R1,R0,10	         |001010 00000 00001 0000000000001010|	2801000a|
+|ADDI R2,R0,20	         |001010 00000 00010 0000000000010100|	28020014|
+|ADDI R3,R0,25	         |001010 00000 00011 0000000000011000|  28030019|
+|OR R7,R7,R7 (dummy)	 |001010 00000 00011 0000000000011001|	0ce77800|
+|OR R7,R7,R7 (dummy)	 |001010 00000 00011 0000000000011001|	0ce77800|
+|ADD R4,R1,R2	         |000000 00001 00010 00100 00000 000000|00222000|
+|OR R7,R7,R7 (dummy)	 |001010 00000 00011 0000000000011001|	0ce77800|
+|ADD R5,R4,R3	         |000000 00100 00011 00101 00000 000000|	00832800|
+|HLT	                 |111111 00000 00000 00000 00000 000000|	fc000000|
+
+## Output
+[Waveform]
+![Refrence Image](Test_Output.png)
+
+[TCL Console]
+![Refrence Image](TCL_Output.png)
+
+
+
 ## Author
 
 Juriel
