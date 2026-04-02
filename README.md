@@ -1,8 +1,8 @@
-# MIPS 5-Stage Pipelined Processor (Verilog Implementation)
+# MIPS32 5-Stage RISC Pipelined  Processor (Verilog Implementation)
 
 ## Overview
 
-This project implements a simplified 32-bit MIPS processor using a
+This project implements a simplified 32-bit RISC based MIPS processor using a
 5-stage pipeline architecture in Verilog HDL.\
 The design uses a two-phase clocking scheme (`clk1` and `clk2`) to model
 pipeline behavior.
@@ -46,6 +46,10 @@ halt instructions.
 -   Writes results back into register file.
 
 ------------------------------------------------------------------------
+
+## Instruction Encoding
+[**Encoding Formats**]
+ ![Refrence Image](Encoding.png)
 
 ## Supported Instructions
 
@@ -104,6 +108,9 @@ halt instructions.
 
 ------------------------------------------------------------------------
 
+## Pipelined DataPath
+![Refrence image](/Pipelined_DataPath.png)
+
 ## Features
 
 -   5-stage pipeline architecture
@@ -115,11 +122,11 @@ halt instructions.
 
 ------------------------------------------------------------------------
 
-## Limitations
+## Pipeline Hazards
 
--   No explicit data hazard detection unit
--   No stall mechanism
--   No jump instruction
+- Structural Hazards due to shared hardware.
+- Data Hazards due to instruction data dependency.
+- Control hazards due to branch instructions.
 
 ------------------------------------------------------------------------
 
@@ -127,9 +134,6 @@ halt instructions.
 
 -   Add hazard detection and stall logic
 -   Implement jump instruction
--   Add testbench with automated verification
--   Convert to single-clock synchronous pipeline
--   Implement cache support
 
 --------------
 
