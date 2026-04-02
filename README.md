@@ -49,7 +49,7 @@ halt instructions.
 
 ## Instruction Encoding
 [**Encoding Formats**]
- ![Refrence Image](Encoding.png)
+ ![Refrence Image](Images/Encoding.png)
 
 ## Supported Instructions
 
@@ -165,7 +165,7 @@ halt instructions.
 ![Refrence Image](Images/Test_Output.png)
 
 [TCL Console]
-![Refrence Image](Images/Encoding.png)
+![Refrence Image](Images/TCL_Output.png)
 
 
 
