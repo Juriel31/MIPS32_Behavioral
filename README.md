@@ -165,10 +165,9 @@ halt instructions.
 ![Refrence Image](/images/Test_Output.png)
 
 [TCL Console]
-![Refrence Image](/images/TCL_Output.png)
+![Refrence Image](Images/Encoding.png)
 
 
 
 ## Author
-
 Juriel
