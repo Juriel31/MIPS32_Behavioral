@@ -109,7 +109,7 @@ halt instructions.
 ------------------------------------------------------------------------
 
 ## Pipelined DataPath
-![Refrence image](/images/Pipelined_DataPath.png)
+![Refrence image](Images/Pipelined_DataPath.png)
 
 ## Features
 
@@ -162,7 +162,7 @@ halt instructions.
 
 ## Output
 [Waveform]
-![Refrence Image](/images/Test_Output.png)
+![Refrence Image](Images/Test_Output.png)
 
 [TCL Console]
 ![Refrence Image](Images/Encoding.png)
